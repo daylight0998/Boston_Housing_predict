@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>code.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(128,128,128); font-style: italic; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,128); font-weight: bold; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(0,128,128); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+code.py</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0"># 在此导入r2_score</span><span class="s1"> 
+ 
+</span><span class="s2">def </span><span class="s1">performance_metric(y_true, y_predict): 
+    </span><span class="s0">&quot;&quot;&quot;计算并返回预测值相比于预测值的分数&quot;&quot;&quot;</span><span class="s1"> 
+    </span><span class="s2">from  </span><span class="s1">sklearn.metrics </span><span class="s2">import </span><span class="s1">r2_score 
+    score = r2_score(y_true, y_predict) 
+ 
+    </span><span class="s2">return </span><span class="s1">score 
+</span><span class="s0"># Calculate the performance of this model</span><span class="s1"> 
+score = performance_metric([</span><span class="s3">3</span><span class="s1">, -</span><span class="s3">0.5</span><span class="s1">, </span><span class="s3">2</span><span class="s1">, </span><span class="s3">7</span><span class="s1">, </span><span class="s3">4.2</span><span class="s1">], [</span><span class="s3">2.5</span><span class="s1">, </span><span class="s3">0.0</span><span class="s1">, </span><span class="s3">2.1</span><span class="s1">, </span><span class="s3">7.8</span><span class="s1">, </span><span class="s3">5.3</span><span class="s1">]) 
+print(</span><span class="s4">&quot;Model has a coefficient of determination, R^2, of {:.3f}.&quot;</span><span class="s1">.format(score))</span></pre>
+</body>
+</html>
